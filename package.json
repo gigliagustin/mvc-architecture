@@ -2,8 +2,11 @@
   "name": "mvc-architecture",
   "version": "1.0.0",
   "description": "Learn mvc architecture",
-  "main": "index.js",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
+    "start": "node app.js",
+    "start:dev": "node --watch app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +24,14 @@
   "bugs": {
     "url": "https://github.com/gigliagustin/mvc-architecture/issues"
   },
-  "homepage": "https://github.com/gigliagustin/mvc-architecture#readme"
+  "homepage": "https://github.com/gigliagustin/mvc-architecture#readme",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.21.1",
+    "semistandard": "^17.0.0",
+    "zod": "3.23.8"
+  },
+  "eslintConfig": {
+    "extends": "semistandard"
+  }
 }
