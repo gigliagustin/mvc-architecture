@@ -1,0 +1,35 @@
+### Query all movies
+
+GET http://localhost:1234/movies
+
+### Query movie by id
+
+GET http://localhost:1234/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
+
+### Query all movies by genre
+
+GET http://localhost:1234/movies?genre=action
+
+### Create a movie
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+  "title": "The Dark Knight 2",
+  "genre": ["Action", "Crime", "Thriller"],
+  "year": 2008,
+  "poster": "https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg",
+  "director": "Christian Bale",
+  "duration": 152
+}
+
+### Update a movie
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+  "year": 2008
+}
+
+### Delete a movie
+DELETE http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
