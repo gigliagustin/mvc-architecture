@@ -1,8 +1,7 @@
-import { readJSON } from '../utils/readJsonUtil.js';
+import { readJSON } from '../../utils/readJsonUtil.js';
 import { randomUUID } from 'node:crypto';
 
-const movies = readJSON('../movies.json');
-
+const movies = readJSON('../../movies.json');
 export class MoviesModel {
   static getAllMovies = async ({ genre }) => {
     if (genre) {
