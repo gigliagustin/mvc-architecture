@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node app.js",
     "start:dev": "node --watch app.js",
+    "start:mysql": "node --watch server-with-mysql.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,11 +28,14 @@
   "homepage": "https://github.com/gigliagustin/mvc-architecture#readme",
   "dependencies": {
     "cors": "2.8.5",
+    "dotenv": "^16.4.5",
     "express": "4.21.1",
+    "mysql2": "^3.11.3",
     "semistandard": "^17.0.0",
     "zod": "3.23.8"
   },
   "eslintConfig": {
     "extends": "semistandard"
-  }
+  },
+  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
 }
